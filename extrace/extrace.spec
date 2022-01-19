@@ -1,5 +1,5 @@
 Name:           extrace
-Version:        0.8
+Version:        0.9
 Release:        1%{?dist}
 Summary:        Trace exec() calls system-wide
 
@@ -32,5 +32,8 @@ extrace traces all program executions occurring on a system.
 %{_mandir}/man1/pwait.1*
 
 %changelog
+* Wed Jan 19 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 0.9-1
+- Update to 0.9
+
 * Thu Aug 26 2021 Gustavo Costa <xfgusta@fedoraproject.org> - 0.8-1
 - Initial package
