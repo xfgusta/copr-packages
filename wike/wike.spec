@@ -1,7 +1,7 @@
 %global appid com.github.hugolabe.Wike
 
 Name:           wike
-Version:        1.6.3
+Version:        1.7.0
 Release:        1%{?dist}
 Summary:        Wikipedia Reader for the GNOME Desktop
 
@@ -56,9 +56,17 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{appid}.desktop
 %{_datadir}/icons/hicolor/*/actions/*
 %{_datadir}/glib-2.0/schemas/%{appid}.gschema.xml
 %{_metainfodir}/%{appid}.metainfo.xml
+%dir %{_datadir}/dbus-1
+%dir %{_datadir}/dbus-1/services
 %{_datadir}/dbus-1/services/%{appid}.SearchProvider.service
+%dir %{_datadir}/gnome-shell
+%dir %{_datadir}/gnome-shell/search-providers
 %{_datadir}/gnome-shell/search-providers/%{appid}.SearchProvider.ini
 
 %changelog
+* Fri Jan 21 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 1.7.0-1
+- Fix unowned directories
+- Update to 1.7.0
+
 * Fri Dec 17 2021 Gustavo Costa <xfgusta@fedoraproject.org> - 1.6.3-1
 - Initial package
