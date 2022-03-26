@@ -1,15 +1,11 @@
 Name:           nq
-Version:        0.4
+Version:        0.5
 Release:        1%{?dist}
 Summary:        Unix command line queue utility
 
 License:        CC0
 URL:            https://github.com/leahneukirchen/nq
 Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
-
-# Add an INSTALL variable to the Makefile
-# https://github.com/leahneukirchen/nq/pull/40
-Patch0:         %{url}/pull/40.patch
 
 BuildRequires:  make
 BuildRequires:  gcc
@@ -22,7 +18,7 @@ The nq utility provides a very lightweight queuing system without requiring
 setup, maintenance, supervision or any long-running processes.
 
 %prep
-%autosetup -p1
+%autosetup
 
 %build
 %make_build CFLAGS='%{build_cflags}'
@@ -44,5 +40,9 @@ setup, maintenance, supervision or any long-running processes.
 %{_mandir}/man1/tq.1*
 
 %changelog
+* Sat Mar 26 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 0.5-1
+- Remove patch
+- Update to 0.5
+
 * Tue Oct 12 2021 Gustavo Costa <xfgusta@fedoraproject.org> - 0.4-1
 - Initial package
