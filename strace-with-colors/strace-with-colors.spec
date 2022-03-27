@@ -1,5 +1,5 @@
 Name:           strace-with-colors
-Version:        5.15
+Version:        5.17
 Release:        1%{?dist}
 Summary:        A diagnostic, debugging and instructional userspace tracer (with colors!)
 
@@ -44,5 +44,8 @@ purposes.
 %{_mandir}/man1/strace-log-merge.1*
 
 %changelog
+* Sun Mar 27 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 5.17-1
+- Update to 5.17
+
 * Fri Dec 17 2021 Gustavo Costa <xfgusta@fedoraproject.org> - 5.15-1
 - Initial package
