@@ -1,6 +1,6 @@
 Name:           strace-with-colors
 Version:        5.17
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A diagnostic, debugging and instructional userspace tracer (with colors!)
 
 License:        LGPLv2+ and GPLv2+
@@ -44,6 +44,9 @@ purposes.
 %{_mandir}/man1/strace-log-merge.1*
 
 %changelog
+* Tue Apr 19 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 5.17-3
+- Update to 5.17-3: Disable colored output when using -o option
+
 * Thu Apr 07 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 5.17-2
 - Update to 5.17-2: Add --no-color option
 
