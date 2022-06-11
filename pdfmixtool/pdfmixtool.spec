@@ -1,7 +1,7 @@
 %global appid eu.scarpetta.PDFMixTool
 
 Name:           pdfmixtool
-Version:        1.0.2
+Version:        1.1
 Release:        1%{?dist}
 Summary:        An application to split, merge, rotate and mix PDF files
 
@@ -48,5 +48,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{appid}.desktop
 %{_metainfodir}/%{appid}.appdata.xml
 
 %changelog
+* Sat Jun 11 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 1.1-1
+- Update to 1.1
+
 * Fri Dec 10 2021 Gustavo Costa <xfgusta@fedoraproject.org> - 1.0.2-1
 - Initial package
