@@ -1,5 +1,5 @@
 Name:           execdir
-Version:        0.1.0
+Version:        0.2.0
 Release:        1%{?dist}
 Summary:        Execute a command in a specific directory
 
@@ -31,5 +31,8 @@ execdir is a tool that lets you run a command in a specific directory.
 %{_mandir}/man1/xdir.1*
 
 %changelog
+* Thu Jun 30 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 0.2.0-1
+- Update to 0.2.0
+
 * Thu Jun 23 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 0.1.0-1
 - Initial package
