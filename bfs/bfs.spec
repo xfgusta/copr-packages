@@ -1,5 +1,5 @@
 Name:           bfs
-Version:        2.6
+Version:        2.6.1
 Release:        1%{?dist}
 Summary:        A breadth-first version of the UNIX find command
 
@@ -14,7 +14,7 @@ BuildRequires:  pkgconfig(libattr)
 BuildRequires:  pkgconfig(libcap)
 BuildRequires:  pkgconfig(oniguruma)
 # needed to run check
-BuildRequires:  /usr/bin/setfacl
+BuildRequires:  acl
 
 %description
 bfs is a breadth-first version of the UNIX find(1) command.
@@ -47,8 +47,16 @@ command line parser and some additional options.
 %dir %{_datadir}/zsh
 %dir %{_datadir}/zsh/site-functions
 %{_datadir}/zsh/site-functions/_%{name}
+%dir %{_datadir}/fish
+%dir %{_datadir}/fish/vendor_completions.d
+%{_datadir}/fish/vendor_completions.d/%{name}.fish
 
 %changelog
+* Tue Jul 05 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 2.6.1-1
+- Update to 2.6.1
+- Add fish completion
+- Use acl package name in BuildRequires
+
 * Sat May 21 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 2.6-1
 - Update to 2.6
 - Add zsh completion
