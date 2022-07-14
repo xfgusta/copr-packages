@@ -1,7 +1,7 @@
 %global appid io.github.cboxdoerfer.FSearch
 
 Name:           fsearch
-Version:        0.1.2
+Version:        0.1.4
 Release:        1%{?dist}
 Summary:        A fast file search utility for Unix-like systems based on GTK+3
 
@@ -51,5 +51,8 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{appid}.desktop
 %{_metainfodir}/%{appid}.appdata.xml
 
 %changelog
+* Thu Jul 14 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 0.1.4-1
+- Update to 0.1.4
+
 * Sun Mar 27 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 0.1.2-1
 - Initial package
