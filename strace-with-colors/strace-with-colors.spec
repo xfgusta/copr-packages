@@ -1,9 +1,9 @@
 Name:           strace-with-colors
-Version:        5.18
-Release:        2%{?dist}
+Version:        5.19
+Release:        1%{?dist}
 Summary:        A diagnostic, debugging and instructional userspace tracer (with colors!)
 
-License:        LGPLv2+ and GPLv2+
+License:        LGPL-2.0-or-later AND GPL-2.0-or-later
 URL:            https://strace.io
 Source0:        %{url}/files/%{version}/strace-%{version}.tar.xz
 Patch0:         %{name}.patch
@@ -44,6 +44,10 @@ purposes.
 %{_mandir}/man1/strace-log-merge.1*
 
 %changelog
+* Mon Aug 29 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 5.19-1
+- Update to 5.19
+- Change License field to use SPDX
+
 * Fri Jul 15 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 5.18-2
 - Update to 5.18-1: Add --color option
 
