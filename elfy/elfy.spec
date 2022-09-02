@@ -1,5 +1,5 @@
 Name:           elfy
-Version:        0.1.0
+Version:        0.2.0
 Release:        1%{?dist}
 Summary:        Display information about ELF files
 
@@ -18,7 +18,7 @@ A tool for displaying information about ELF files.
 %autosetup
 
 %build
-%make_build CFLAGS='%{build_cflags}' LDFLAGS='%{build_ldflags}'
+%make_build
 
 %install
 %make_install PREFIX=%{_prefix}
@@ -30,5 +30,8 @@ A tool for displaying information about ELF files.
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Fri Sep 02 2022 Gustavo Costa <xfgusta@gmail.org> - 0.2.0-1
+- Update to 0.2.0
+
 * Sat Jun 04 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 0.1.0-1
 - Initial package
