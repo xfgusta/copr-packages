@@ -2,7 +2,7 @@
 %global appid com.rafaelmardojai.WebfontKitGenerator
 
 Name:           webfont-kit-generator
-Version:        0.5.0
+Version:        1.0.2
 Release:        1%{?dist}
 Summary:        Create @font-face kits easily
 
@@ -21,13 +21,14 @@ BuildRequires:  libappstream-glib
 
 Requires:       hicolor-icon-theme
 Requires:       python3-gobject
-Requires:       libhandy1
-Requires:       gtk3
-Requires:       gtksourceview4
+Requires:       libadwaita
+Requires:       gtk4
+Requires:       gtksourceview5
+Requires:       python3dist(brotli)
 Requires:       python3dist(fonttools)
 
 %description
-Webfont Kit Generator is a simple utility that allows you to generate woff, 
+Webfont Kit Generator is a simple utility that allows you to generate woff,
 woff2 and the necessary CSS boilerplate from non-web font formats (otf & ttf).
 
 %prep
@@ -56,5 +57,8 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{appid}.desktop
 %{_metainfodir}/%{appid}.metainfo.xml
 
 %changelog
+* Sat Oct 22 2022 Gustavo Costa <xfgusta@gmail.com> - 1.0.1-1
+- Update to 1.0.1
+
 * Wed Jun 30 2021 Gustavo Costa <xfgusta@fedoraproject.org> - 0.5.0-1
 - Initial package
