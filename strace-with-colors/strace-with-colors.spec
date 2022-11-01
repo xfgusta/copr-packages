@@ -1,5 +1,5 @@
 Name:           strace-with-colors
-Version:        5.19
+Version:        6.0
 Release:        1%{?dist}
 Summary:        A diagnostic, debugging and instructional userspace tracer (with colors!)
 
@@ -44,6 +44,9 @@ purposes.
 %{_mandir}/man1/strace-log-merge.1*
 
 %changelog
+* Tue Nov 01 2022 Gustavo Costa <xfgusta@gmail.com> - 6.0-1
+- Update to 6.0
+
 * Mon Aug 29 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 5.19-1
 - Update to 5.19
 - Change License field to use SPDX
