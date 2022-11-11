@@ -1,11 +1,9 @@
-%global debug_package %{nil}
-
 Name:           zps
-Version:        1.2.7
+Version:        1.2.8
 Release:        1%{?dist}
 Summary:        A small utility for listing and cleaning up zombie processes
 
-License:        GPLv3
+License:        GPL-3.0
 URL:            https://github.com/orhun/zps
 Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
@@ -21,12 +19,11 @@ zombie processes.
 %autosetup
 
 %build
-%set_build_flags
-%make_build
+%make_build CFLAGS="%{build_cflags}" LDFLAGS="%{build_ldflags}"
 
 %install
 %make_install TARGET="%{buildroot}"
-%{__install} -Dpm 0644 man/%{name}.1 %{buildroot}/%{_mandir}/man1/%{name}.1
+install -Dpm 0644 man/%{name}.1 %{buildroot}/%{_mandir}/man1/%{name}.1
 
 %check
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
@@ -39,5 +36,9 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
+* Fri Nov 11 2022 Gustavo Costa <xfgusta@gmail.com> 1.2.8-1
+- Update to 1.2.8
+- Change License to SPDX
+
 * Tue Jun 29 2021 Gustavo Costa <xfgusta@fedoraproject.org> 1.2.7-1
 - Initial package
