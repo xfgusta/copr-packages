@@ -1,11 +1,11 @@
 %global appid io.github.cboxdoerfer.FSearch
 
 Name:           fsearch
-Version:        0.1.4
+Version:        0.2.2
 Release:        1%{?dist}
 Summary:        A fast file search utility for Unix-like systems based on GTK+3
 
-License:        GPLv2+
+License:        GPL-2.0-or-later
 URL:            https://github.com/cboxdoerfer/fsearch
 Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
@@ -51,6 +51,10 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{appid}.desktop
 %{_metainfodir}/%{appid}.appdata.xml
 
 %changelog
+* Fri Nov 11 2022 Gustavo Costa <xfgusta@gmail.com> - 0.2.2-1
+- Update to 0.2.2
+- Change License to SPDX
+
 * Thu Jul 14 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 0.1.4-1
 - Update to 0.1.4
 
