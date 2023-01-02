@@ -1,5 +1,5 @@
 Name:           strace-with-colors
-Version:        6.0
+Version:        6.1
 Release:        1%{?dist}
 Summary:        A diagnostic, debugging and instructional userspace tracer (with colors!)
 
@@ -44,6 +44,9 @@ purposes.
 %{_mandir}/man1/strace-log-merge.1*
 
 %changelog
+* Mon Jan 02 2023 Gustavo Costa <xfgusta@gmail.com> - 6.1-1
+- Update to 6.1
+
 * Tue Nov 01 2022 Gustavo Costa <xfgusta@gmail.com> - 6.0-1
 - Update to 6.0
 
