@@ -1,14 +1,11 @@
 Name:           trurl
-Version:        0.5
+Version:        0.6
 Release:        1%{?dist}
 Summary:        Command line tool for URL parsing and manipulation
 
 License:        curl
 URL:            https://curl.se/trurl
 Source0:        https://github.com/curl/trurl/archive/%{name}-%{version}/%{name}-%{version}.tar.gz
-
-# version: bump to 0.5
-Patch0:         https://github.com/curl/trurl/commit/90e0183fe55563012460f8ce46bf95364249b563.patch
 
 BuildRequires:  make
 BuildRequires:  gcc
@@ -38,6 +35,10 @@ make test
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Wed Apr 26 2023 Gustavo Costa <xfgusta@gmail.com> - 0.6-1
+- Update to 0.6
+- Drop patch
+
 * Tue Apr 18 2023 Gustavo Costa <xfgusta@gmail.com> - 0.5-1
 - Update to 0.5
 - Use python to run tests
