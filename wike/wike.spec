@@ -1,7 +1,7 @@
 %global appid com.github.hugolabe.Wike
 
 Name:           wike
-Version:        2.0.0
+Version:        2.0.1
 Release:        1%{?dist}
 Summary:        Wikipedia Reader for the GNOME Desktop
 
@@ -63,6 +63,9 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{appid}.desktop
 %{_datadir}/gnome-shell/search-providers/%{appid}.SearchProvider.ini
 
 %changelog
+* Thu Apr 27 2023 Gustavo Costa <xfgusta@gmail.com> - 2.0.1-1
+- Update to 2.0.1
+
 * Fri Apr 14 2023 Gustavo Costa <xfgusta@gmail.com> - 2.0.0-1
 - Update to 2.0.0 (rhbz#2186215)
 - Change gtk3, libhandy and webkit2gtk4.1 to gtk4, libadwaita and webkitgtk6.1
