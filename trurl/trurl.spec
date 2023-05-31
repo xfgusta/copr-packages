@@ -1,5 +1,5 @@
 Name:           trurl
-Version:        0.6
+Version:        0.7
 Release:        1%{?dist}
 Summary:        Command line tool for URL parsing and manipulation
 
@@ -35,6 +35,9 @@ make test
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Wed May 31 2023 Gustavo Costa <xfgusta@gmail.com> - 0.7-1
+- Update to 0.7
+
 * Wed Apr 26 2023 Gustavo Costa <xfgusta@gmail.com> - 0.6-1
 - Update to 0.6
 - Drop patch
