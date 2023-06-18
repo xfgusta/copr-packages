@@ -1,5 +1,5 @@
 Name:           trurl
-Version:        0.7
+Version:        0.8
 Release:        1%{?dist}
 Summary:        Command line tool for URL parsing and manipulation
 
@@ -20,7 +20,7 @@ shell script authors everywhere.
 %autosetup -n %{name}-%{name}-%{version}
 
 %build
-%make_build CFLAGS="%{build_cflags}"
+%make_build
 
 %check
 make test
@@ -35,6 +35,9 @@ make test
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Sun Jun 18 2023 Gustavo Costa <xfgusta@gmail.com> - 0.8-1
+- Update to 0.8
+
 * Wed May 31 2023 Gustavo Costa <xfgusta@gmail.com> - 0.7-1
 - Update to 0.7
 
