@@ -1,5 +1,5 @@
 Name:           bfs
-Version:        3.0
+Version:        3.0.1
 Release:        1%{?dist}
 Summary:        A breadth-first version of the UNIX find command
 
@@ -52,6 +52,9 @@ command line parser and some additional options.
 %{_datadir}/fish/vendor_completions.d/%{name}.fish
 
 %changelog
+* Wed Jul 19 2023 Gustavo Costa <xfgusta@gmail.com> - 3.0.1-1
+- Update to 3.0.1
+
 * Fri Jul 14 2023 Gustavo Costa <xfgusta@gmail.com> - 3.0-1
 - Update to 3.0
 
