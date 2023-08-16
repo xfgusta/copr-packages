@@ -1,5 +1,5 @@
 Name:           bitwise
-Version:        0.43
+Version:        0.50
 Release:        1%{?dist}
 Summary:        Terminal based bit manipulator in ncurses
 
@@ -38,5 +38,8 @@ developers and device drivers developers.
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Wed Aug 16 2023 Gustavo Costa <xfgusta@gmail.com> - 0.50-1
+- Update to 0.50
+
 * Wed Apr 20 2022 Gustavo Costa <xfgusta@fedoraproject.org> - 0.43-1
 - Initial package
